@@ -8,7 +8,7 @@ const projects = [
 ];
 
 const PortfolioSection = () => (
-  <section id="portfolio" className="py-24 bg-muted/50">
+  <section id="portfolio" className="py-24 relative z-10">
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Portfólio</h2>

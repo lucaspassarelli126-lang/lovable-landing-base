@@ -12,9 +12,9 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme" attribute="class">
       <TooltipProvider>
-        <div className="relative min-h-screen bg-background">
+        <div className="relative min-h-screen">
           <DottedSurface className="size-full">
             <div
               aria-hidden="true"
