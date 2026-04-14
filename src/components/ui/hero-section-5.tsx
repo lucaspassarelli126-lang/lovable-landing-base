@@ -61,74 +61,72 @@ export function HeroSection() {
                                     gap={112}>
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-5 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                                            alt="Nvidia Logo"
-                                            height="20"
-                                            width="auto"
-                                        />
-                                    </div>
-
-                                    <div className="flex">
-                                        <img
-                                            className="mx-auto h-4 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/column.svg"
-                                            alt="Column Logo"
-                                            height="16"
+                                            className="mx-auto h-6 w-fit dark:invert opacity-70"
+                                            src="https://cdn.simpleicons.org/react/000000"
+                                            alt="React Logo"
+                                            height="24"
                                             width="auto"
                                         />
                                     </div>
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-4 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/github.svg"
-                                            alt="GitHub Logo"
-                                            height="16"
+                                            className="mx-auto h-6 w-fit dark:invert opacity-70"
+                                            src="https://cdn.simpleicons.org/tailwindcss/000000"
+                                            alt="Tailwind CSS Logo"
+                                            height="24"
                                             width="auto"
                                         />
                                     </div>
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-5 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/nike.svg"
-                                            alt="Nike Logo"
-                                            height="20"
+                                            className="mx-auto h-6 w-fit dark:invert opacity-70"
+                                            src="https://cdn.simpleicons.org/nextdotjs/000000"
+                                            alt="Next.js Logo"
+                                            height="24"
                                             width="auto"
                                         />
                                     </div>
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-5 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                                            alt="Lemon Squeezy Logo"
-                                            height="20"
+                                            className="mx-auto h-6 w-fit dark:invert opacity-70"
+                                            src="https://cdn.simpleicons.org/vercel/000000"
+                                            alt="Vercel Logo"
+                                            height="24"
                                             width="auto"
                                         />
                                     </div>
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-4 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/laravel.svg"
-                                            alt="Laravel Logo"
-                                            height="16"
+                                            className="mx-auto h-6 w-fit dark:invert opacity-70"
+                                            src="https://cdn.simpleicons.org/typescript/000000"
+                                            alt="TypeScript Logo"
+                                            height="24"
                                             width="auto"
                                         />
                                     </div>
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-7 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/lilly.svg"
-                                            alt="Lilly Logo"
-                                            height="28"
+                                            className="mx-auto h-6 w-fit dark:invert opacity-70"
+                                            src="https://cdn.simpleicons.org/nodedotjs/000000"
+                                            alt="Node.js Logo"
+                                            height="24"
                                             width="auto"
                                         />
                                     </div>
-
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-6 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/openai.svg"
-                                            alt="OpenAI Logo"
+                                            className="mx-auto h-6 w-fit dark:invert opacity-70"
+                                            src="https://cdn.simpleicons.org/figma/000000"
+                                            alt="Figma Logo"
+                                            height="24"
+                                            width="auto"
+                                        />
+                                    </div>
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-6 w-fit dark:invert opacity-70"
+                                            src="https://cdn.simpleicons.org/framer/000000"
+                                            alt="Framer Logo"
                                             height="24"
                                             width="auto"
                                         />
