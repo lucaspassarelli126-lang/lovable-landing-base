@@ -16,7 +16,7 @@ export function HeroSection() {
             <HeroHeader />
             <main className="overflow-x-hidden">
                 <section>
-                    <div className="py-24 md:pb-32 lg:pb-36 lg:pt-72">
+                    <div className="relative py-24 pb-8 md:pb-12 lg:pb-16 lg:pt-72">
                         <div className="relative z-10 mx-auto flex max-w-7xl flex-col px-6 lg:block lg:px-12">
                             <div className="mx-auto max-w-lg text-center lg:ml-0 lg:max-w-full lg:text-left">
                                 <GooeyText 
