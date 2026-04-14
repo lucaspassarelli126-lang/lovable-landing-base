@@ -23,7 +23,7 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold text-foreground mb-3 text-sm">Redes Sociais</h4>
           <div className="flex gap-4">
-            {[Instagram, Facebook, Linkedin].map((Icon, i) => (
+            {[Mail, MessageCircle, Globe].map((Icon, i) => (
               <a key={i} href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Icon className="h-5 w-5" />
               </a>
