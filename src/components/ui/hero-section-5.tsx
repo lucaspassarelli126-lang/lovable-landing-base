@@ -5,7 +5,7 @@ import { InfiniteSlider } from '@/components/ui/infinite-slider'
 import { ProgressiveBlur } from '@/components/ui/progressive-blur'
 import { SplineScene } from '@/components/ui/splite'
 import { GooeyText } from '@/components/ui/gooey-text-morphing'
-import { HandWrittenTitle } from '@/components/ui/hand-writing-text'
+import { Typewriter } from '@/components/ui/typewriter'
 import { cn } from '@/lib/utils'
 import { Menu, X, ChevronRight } from 'lucide-react'
 import { useScroll, motion } from 'framer-motion' // Switched back to framer-motion as it's more stable for these imports in some envs, but user said motion/react. I'll try to stick to framer-motion if possible or motion if installed.
@@ -24,10 +24,14 @@ export function HeroSection() {
                                     className="h-[80px] md:h-[100px] lg:h-[120px] mt-8 lg:mt-16" 
                                     textClassName="font-bold tracking-tight" 
                                 />
-                                <HandWrittenTitle 
-                                    className="mt-0 pt-4 pb-0 max-w-2xl mx-0 lg:ml-0 px-0 [&>div>p]:text-lg [&>div>p]:text-muted-foreground"
-                                    subtitle="Criamos experiências digitais premium. Sites de alta conversão, rápidos e com design exclusivo para posicionar sua marca no topo do mercado." 
-                                />
+                                <p className="mt-8 max-w-2xl text-balance text-lg text-muted-foreground h-20">
+                                    <Typewriter
+                                        text="Criamos experiências digitais premium. Sites de alta conversão, rápidos e com design exclusivo para posicionar sua marca no topo do mercado."
+                                        speed={30}
+                                        loop={false}
+                                        cursorChar="|"
+                                    />
+                                </p>
 
                                 <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
                                     <Button
