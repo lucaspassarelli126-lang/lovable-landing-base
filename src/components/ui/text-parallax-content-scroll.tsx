@@ -101,7 +101,7 @@ const StickyImage = ({ imgUrl }: { imgUrl: string }) => {
           src={imgUrl}
           alt=""
           className="h-full w-auto object-contain select-none pointer-events-none"
-          style={{ opacity }}
+          style={{ opacity, mixBlendMode: "screen" }}
         />
       ) : (
         <motion.div
