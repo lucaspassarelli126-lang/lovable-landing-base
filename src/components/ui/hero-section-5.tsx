@@ -5,6 +5,7 @@ import { InfiniteSlider } from '@/components/ui/infinite-slider'
 import { ProgressiveBlur } from '@/components/ui/progressive-blur'
 import { SplineScene } from '@/components/ui/splite'
 import { GooeyText } from '@/components/ui/gooey-text-morphing'
+import { HandWrittenTitle } from '@/components/ui/hand-writing-text'
 import { cn } from '@/lib/utils'
 import { Menu, X, ChevronRight } from 'lucide-react'
 import { useScroll, motion } from 'framer-motion' // Switched back to framer-motion as it's more stable for these imports in some envs, but user said motion/react. I'll try to stick to framer-motion if possible or motion if installed.
@@ -20,10 +21,14 @@ export function HeroSection() {
                             <div className="mx-auto max-w-lg text-center lg:ml-0 lg:max-w-full lg:text-left">
                                 <GooeyText 
                                     texts={["Daurer Cria", "Daurer Otimiza", "Daurer Escala", "Daurer Vende"]} 
-                                    className="h-[80px] md:h-[100px] lg:h-[120px] mt-8 lg:mt-16" 
+                                    className="h-[80px] md:h-[100px] lg:h-[120px] mt-8 lg:mt-16 lg:ml-[-1rem]" 
                                     textClassName="font-bold tracking-tight" 
                                 />
-                                <p className="mt-8 max-w-2xl text-balance text-lg text-muted-foreground">Criamos experiências digitais premium. Sites de alta conversão, rápidos e com design exclusivo para posicionar sua marca no topo do mercado.</p>
+                                <HandWrittenTitle 
+                                    title="Criamos experiências digitais premium."
+                                    subtitle="Sites de alta conversão, rápidos e com design exclusivo para posicionar sua marca no topo do mercado."
+                                    className="mt-6 mx-auto lg:mx-0 max-w-2xl"
+                                />
 
                                 <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
                                     <Button
