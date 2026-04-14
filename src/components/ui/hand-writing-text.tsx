@@ -10,9 +10,9 @@ interface HandWrittenTitleProps {
 }
 
 function HandWrittenTitle({
-    title = "Hand Written",
-    subtitle = "Optional subtitle",
-    className,
+    title,
+    subtitle,
+    className
 }: HandWrittenTitleProps) {
     const draw = {
         hidden: { pathLength: 0, opacity: 0 },
@@ -27,8 +27,8 @@ function HandWrittenTitle({
     };
 
     return (
-        <div className={cn("relative w-full max-w-4xl py-8", className)}>
-            <div className="absolute inset-0 pointer-events-none">
+        <div className={cn("relative w-full max-w-4xl py-12 lg:py-16", className)}>
+            <div className="absolute inset-0">
                 <motion.svg
                     width="100%"
                     height="100%"
@@ -36,9 +36,8 @@ function HandWrittenTitle({
                     initial="hidden"
                     animate="visible"
                     className="w-full h-full"
-                    preserveAspectRatio="none"
                 >
-                    <title>Handwritten Path</title>
+                    <title>Higlight</title>
                     <motion.path
                         d="M 950 90 
                            C 1250 300, 1050 480, 600 520
@@ -51,22 +50,24 @@ function HandWrittenTitle({
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         variants={draw}
-                        className="text-primary opacity-80"
+                        className="text-foreground opacity-30"
                     />
                 </motion.svg>
             </div>
-            <div className="relative z-10 flex flex-col items-center justify-center lg:items-start lg:justify-start">
-                <motion.h2
-                    className="text-2xl md:text-3xl text-foreground tracking-tighter flex items-center gap-2 mb-2 lg:text-left text-center"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5, duration: 0.8 }}
-                >
-                    {title}
-                </motion.h2>
+            <div className="relative text-center lg:text-left z-10 flex flex-col items-center lg:items-start justify-center px-8">
+                {title && (
+                    <motion.h2
+                        className="text-3xl md:text-5xl text-foreground tracking-tighter flex items-center gap-2 mb-4"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.5, duration: 0.8 }}
+                    >
+                        {title}
+                    </motion.h2>
+                )}
                 {subtitle && (
                     <motion.p
-                        className="text-lg text-muted-foreground lg:text-left text-center"
+                        className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 0.8 }}
