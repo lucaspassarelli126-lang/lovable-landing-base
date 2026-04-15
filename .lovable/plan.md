@@ -1,24 +1,16 @@
 
 
-## Landing Page Structure for Web Agency
+## Corrigir erros de build do projeto
 
-A clean, modern landing page skeleton with placeholder sections ready for content customization:
+O projeto tem dois erros de TypeScript que impedem o build. Ambos vieram do repositório GitHub e precisam ser corrigidos:
 
-### Sections (top to bottom):
-1. **Header/Navbar** — Logo placeholder + navigation links (Home, Serviços, Portfólio, Contato) + CTA button
-2. **Hero Section** — Large heading, subtitle text, CTA button, hero image placeholder
-3. **Services/Serviços** — Grid of 3-4 service cards with icon, title, and description placeholders
-4. **Portfolio/Portfólio** — Grid of 6 project cards with image placeholders and overlay text
-5. **About/Sobre** — Split layout: text block + image placeholder
-6. **Testimonials/Depoimentos** — Carousel or grid of 3 client testimonial cards
-7. **Stats/Números** — Row of 4 metric counters (projetos, clientes, anos, etc.)
-8. **CTA Section** — Full-width banner with heading + action button
-9. **Footer** — Logo, nav links, social media icons, copyright
+### Correções necessárias
 
-### Design approach:
-- Clean, minimal, professional aesthetic
-- Fully responsive (mobile-first)
-- Smooth scroll between sections
-- Subtle hover animations on cards and buttons
-- All text and images as placeholders, easy to swap out
+**1. `src/components/theme-provider.tsx`** — O tipo `ThemeProviderProps` não existe mais na versão instalada do `next-themes`. Solução: usar `React.ComponentProps<typeof NextThemesProvider>` no lugar.
+
+**2. `src/components/ui/hand-writing-text.tsx`** — O tipo `ease` com array de números `[0.43, 0.13, 0.23, 0.96]` não é aceito diretamente como `Variants`. Solução: fazer cast do objeto `draw` como `any` ou usar tipo `as const` com assertion para contornar a incompatibilidade de tipos do framer-motion.
+
+### Detalhes técnicos
+- No theme-provider, trocar a linha do import e o tipo para `React.ComponentProps<typeof NextThemesProvider>`
+- No hand-writing-text, adicionar `as any` no `variants={draw as any}` para evitar o erro de tipos complexos do framer-motion
 
