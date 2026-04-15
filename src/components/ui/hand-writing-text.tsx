@@ -49,7 +49,7 @@ function HandWrittenTitle({
                         stroke="currentColor"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        variants={draw}
+                        variants={draw as any}
                         className="text-foreground opacity-30"
                     />
                 </motion.svg>
